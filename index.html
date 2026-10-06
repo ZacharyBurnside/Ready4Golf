@@ -3,11 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ready4Golf – find the tee time your whole group can make</title>
-<meta name="description" content="Stop texting “who’s around Saturday?” Everyone taps their open times and Ready4Golf shows when enough of your group can play.">
-<meta property="og:title" content="Ready4Golf – find the tee time your whole group can make">
-<meta property="og:description" content="Everyone taps the parts of the day they’re open. Ready4Golf finds the tee times your whole group can actually make.">
-<meta property="og:image" content="img/screenshot_01.jpg">
+<title>Ready4Golf – find the tee time your group can make</title>
+<meta name="description" content="Stop texting “who’s around Saturday?” Everyone taps their open times and Ready4Golf shows when enough of your group can play. Free for iPhone.">
+<meta property="og:title" content="Ready4Golf – find the tee time your group can make">
+<meta property="og:description" content="Everyone taps the parts of the day they’re open. Ready4Golf finds the tee times enough of your group can actually make.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zacharyburnside.github.io/ready4golf/">
+<meta property="og:image" content="https://zacharyburnside.github.io/ready4golf/img/screenshot_01.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://zacharyburnside.github.io/ready4golf/">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<!-- When the app is live, add: <meta name="apple-itunes-app" content="app-id=YOUR_APP_ID"> -->
 <meta name="theme-color" content="#297345">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -18,6 +26,7 @@
     <nav>
       <a href="#demo">Demo</a>
       <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
       <a href="support.html">Support</a>
       <a href="privacy.html">Privacy</a>
     </nav>
@@ -30,13 +39,19 @@
       <div class="hero-copy">
         <span class="eyebrow">For golf groups</span>
         <h1>Stop texting <em>“who’s around Saturday?”</em></h1>
-        <p class="lead">Everyone taps the parts of the day they’re open. Ready4Golf finds the tee times your whole group can actually make.</p>
+        <p class="lead">Everyone taps the parts of the day they’re open. Ready4Golf finds the tee times enough of your group can actually make, and never counts a quiet friend out.</p>
         <div class="cta-row">
           <!-- When the app is live, turn this into a link to the App Store page: <a class="cta" href="YOUR_APP_STORE_URL"> -->
           <span class="cta soon"><span><small>Coming soon to the</small>App Store</span></span>
           <a class="ghost" href="#how">See how it works →</a>
         </div>
-        <p class="cta-note">Free to start. iPhone.</p>
+        <form class="waitlist" data-waitlist novalidate>
+          <label for="wl-email" class="sr">Email address</label>
+          <input id="wl-email" type="email" name="email" placeholder="Your email for launch news" autocomplete="email" required>
+          <button type="submit">Notify me</button>
+          <p class="wl-msg" role="status" aria-live="polite"></p>
+        </form>
+        <p class="cta-note">Free to start · iPhone, iOS 17 or later</p>
       </div>
       <div class="phones" aria-label="App screenshots">
         <div class="phone back"><img src="img/screenshot_02.jpg" alt="My Times screen with open blocks for each day"></div>
@@ -47,7 +62,7 @@
 
   <div class="strip">
     <div class="wide">
-      <div class="proof"><b>No accounts</b><span>Sign in with iCloud</span></div>
+      <div class="proof"><b>No new account</b><span>Uses your iCloud</span></div>
       <div class="proof"><b>Always in sync</b><span>On everyone’s phone</span></div>
       <div class="proof"><b>Blocks, not minutes</b><span>Early to twilight</span></div>
       <div class="proof"><b>Multiple groups</b><span>Switch in a tap</span></div>
@@ -91,7 +106,7 @@
       <div class="step">
         <span class="num">3</span>
         <h3>See the overlap</h3>
-        <p>The best window sits at the top, with who’s in and who you’re still waiting on. Copy it to the group chat and book it.</p>
+        <p>The best window sits at the top, with who’s in and who you’re still waiting on. Copy it to the group chat, then call the course or book online.</p>
         <div class="shot"><img src="img/screenshot_01.jpg" alt="Tee Times screen showing the best window for the group"></div>
       </div>
     </div>
@@ -133,6 +148,19 @@
         </ul>
       </div>
     </div>
+    <div class="feature flip">
+      <div class="feature-media"><div class="phone"><img src="img/screenshot_01.jpg" alt="Tee Times screen with the best window and a lock-in button"></div></div>
+      <div>
+        <p class="kicker">Make it official</p>
+        <h3>Lock it in, then add it to your calendar.</h3>
+        <p>When enough people are in, lock the plan. Everyone sees it pinned at the top, and you can copy it to the group chat or add it to your calendar in a tap.</p>
+        <ul>
+          <li>One shared plan for the whole group</li>
+          <li>A heads-up if another of your groups already has a round that day</li>
+          <li>A button to search for tee times on GolfNow</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <section class="wide">
@@ -140,7 +168,7 @@
       <div>
         <h2>Free for a foursome. Pro for the whole crew.</h2>
         <p>Free groups hold up to 4 players, and you can organize 1 group. Pro removes both limits. The organizer subscribes and everyone in their group gets Pro.</p>
-        <p class="small">Pro is an auto-renewing subscription (monthly or annual). Manage or cancel any time in your Apple ID settings.</p>
+        <p class="small">Pro is an auto-renewing subscription, monthly or annual. The price is shown in the App Store before you subscribe. Manage or cancel any time in your Apple ID settings.</p>
       </div>
       <div class="tiers">
         <div class="tier"><h3>Free</h3><p>Up to 4 players · 1 group</p></div>
@@ -149,9 +177,28 @@
     </div>
   </section>
 
+  <section class="block wide" id="faq">
+    <p class="kicker">Questions</p>
+    <h2 class="section-title">Before you start a group.</h2>
+    <div class="faq">
+      <details><summary>Do my friends need to pay?</summary><p>No. Only the organizer subscribes to Pro, and everyone in that organizer’s group gets it. Friends can always join free groups.</p></details>
+      <details><summary>Do my friends need an iPhone?</summary><p>Yes. Ready4Golf is an iPhone app (iOS 17 or later) and there is no Android version yet. Everyone in the group needs an iPhone and to be signed in to iCloud.</p></details>
+      <details><summary>Does it book the tee time?</summary><p>No. It finds when enough of your group can play. Then you call the course or book online. A button on the plan opens GolfNow to help you search.</p></details>
+      <details><summary>What happens if someone doesn’t answer?</summary><p>They show as “waiting on” and are not counted out, so a quiet friend never kills the plan by accident.</p></details>
+      <details><summary>What does it do with my data?</summary><p>Your group lives in your own iCloud, shared only with the people you invite. There is no Ready4Golf account or ad tracking. See the <a href="privacy.html">privacy policy</a>.</p></details>
+      <details><summary>How many people can be in a group?</summary><p>Free groups hold up to 4 players and you can organize 1 group. Pro removes both limits.</p></details>
+    </div>
+  </section>
+
   <section class="final">
     <h2>Get your group on the same page.</h2>
-    <p>Less texting, more golf.</p>
+    <p>Less texting, more golf. Built by a golfer who got tired of the group text.</p>
+    <form class="waitlist" data-waitlist novalidate>
+      <label for="wl-email-2" class="sr">Email address</label>
+      <input id="wl-email-2" type="email" name="email" placeholder="Your email for launch news" autocomplete="email" required>
+      <button type="submit">Notify me</button>
+      <p class="wl-msg" role="status" aria-live="polite"></p>
+    </form>
     <div class="cta-row">
       <span class="cta soon"><span><small>Coming soon to the</small>App Store</span></span>
       <a class="ghost" href="support.html">Questions? Get help</a>
@@ -165,5 +212,31 @@
     <p>© 2026 Ready4Golf. Not affiliated with or endorsed by any golf course or booking service.</p>
   </div>
 </footer>
+<script>
+// Waitlist: set WAITLIST_ENDPOINT to a Formspree/Tally/Google Form POST URL to
+// collect emails in a form service. Until then it opens a pre-filled email.
+const WAITLIST_ENDPOINT = "";
+const WAITLIST_FALLBACK_EMAIL = "support.fore@gmail.com";
+document.querySelectorAll("[data-waitlist]").forEach(function (form) {
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    const input = form.querySelector("input[type=email]");
+    const msg = form.querySelector(".wl-msg");
+    const email = (input.value || "").trim();
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { msg.textContent = "Please enter a valid email."; return; }
+    if (WAITLIST_ENDPOINT) {
+      try {
+        const r = await fetch(WAITLIST_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify({ email: email }) });
+        if (!r.ok) throw new Error("bad status");
+        msg.textContent = "Thanks! We’ll email you when it’s live.";
+        input.value = "";
+      } catch (err) { msg.textContent = "Couldn’t send that. Please try again."; }
+    } else {
+      window.location.href = "mailto:" + WAITLIST_FALLBACK_EMAIL + "?subject=" + encodeURIComponent("Notify me when Ready4Golf launches") + "&body=" + encodeURIComponent("Please add me to the launch list: " + email);
+      msg.textContent = "Your email app should open. Just press send.";
+    }
+  });
+});
+</script>
 </body>
 </html>
